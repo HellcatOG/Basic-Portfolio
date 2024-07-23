@@ -867,10 +867,3 @@ button:hover {
     right: 1rem;
   }
 }
-#nav-menu {
-  display: none; /* Hide menu by default */
-}
-
-#nav-menu.active {
-  display: flex; /* Show menu when active */
-}
