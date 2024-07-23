@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">Portfolio.</a>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      
+
+      <nav class="navbar" id="nav-menu">
+        <button class="close-btn">&times;</button> <!-- Close button -->
+        <a href="#home" class="active">Home</a>
+        <a href="#About">About</a>
+        <a href="#project">Projects</a>
+        <a href="#resume-section">Resume</a>
+        <a href="#blog-section">Blogs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hey,I'm</h3>
+        <h1>Pranav Unnikrishnan</h1>
+        <h3>And I'm a <span>Student</span></h3>
+        <p>
+          I am a result-oriented web developer and student with experience in
+          building and managing websites and web applications that contribute to
+          the success of the overall product. I also engage in freelance graphic
+          design work and possess strong knowledge in web development.
+        </p>
+        <div class="social-media">
+          <a href=""><i class="fa-brands fa-upwork"></i></a>
+          <a href=""><i class="fa-solid fa-envelope"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          
+        </div>
+        <a href="" class="btn">Contact Now</a>
+      </div>
+      <div class="home-img">
+        <img src="img/DP.jpg" alt="profile picture" />
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="About">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Pranav Unnikrishnan from Thookupalam. I hold a Bachelor's degree in Computer Applications from Christ College Puliyanala and am currently pursuing a Master's degree in Computer Applications at Marian College Kuttikanam. <br> 
+          <br>In addition to my academic pursuits, I work part-time as a graphic designer. While I'm not a professional in this field, I enjoy taking on basic design projects in my free time. I also have a foundational understanding of web development, focusing primarily on front-end technologies. I'm eager to expand my skills further and delve into both back-end development and advanced frameworks.
+        </p>
+      </div>
+      <div class="about-skills">
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="90%" style="max-width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="70%" style="max-width: 70%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Javascript</div>
+            <div class="skill-bar">
+              <div class="skill-per" per="60%" style="max-width: 60%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="skill-name">Python</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="50%" style="max-width: 50%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+     <section class="project" id="project">
+      <div class="hd1">
+        <h1 class="project-title">Projects</h1>
+        <p class="project-description">
+          Explore the diverse projects I undertook during my Bachelor's in Computer Applications. Each project reflects my growth and learning in web development, showcasing practical applications of my skills and creativity.
+        </p>
+      </div>
+  
+      <div class="container">
+        <div class="tab-menu">
+          <button
+            class="tab-button active"
+            data-project="Project1"
+            onclick="showCity('Project1')"
+          >
+            Project 1
+          </button>
+          <button
+            class="tab-button"
+            data-project="Project2"
+            onclick="showCity('Project2')"
+          >
+            Project 2
+          </button>
+        </div>
+        <div class="content">
+          <div id="Project1" class="city-content">
+            <div class="gallery">
+              <img
+                src="img/a1.png"
+                alt="Project 1 - Image 1"
+                onclick="openModal('Project1', 0)"
+              />
+              <img
+                src="img/a2.png"
+                alt="Project 1 - Image 2"
+                onclick="openModal('Project1', 1)"
+              />
+              <img
+                src="img/a3.png"
+                alt="Project 1 - Image 3"
+                onclick="openModal('Project1', 2)"
+              />
+              <img
+                src="img/a4.png"
+                alt="Project 1 - Image 4"
+                onclick="openModal('Project1', 3)"
+              />
+            </div>
+            <div class="text-content">
+              <h2>Online BookStore</h2>
+              <p>
+                I built an online bookstore using PHP for the backend, and HTML and CSS for the frontend. The site allows users to browse and purchase books, featuring a user-friendly interface and secure transaction processing. It includes functionalities such as search, categorization, and user account management.
+                <br />
+                <br />
+                <b>Technologies used:</b> Frontend : Html, Css, JavaScript. Backend: Php, MySql
+                <br />
+                <b>Role:</b> Full-stack
+              </p>
+              <button class="project-button" onclick="redirectToLink('https://github.com/HellcatOG/BookStoreWeb.git')">Project 1 Button</button>
+            </div>
+          </div>
+          <div id="Project2" class="city-content">
+            <div class="gallery">
+              <img
+                src="img/b1.png"
+                alt="Project 2 - Image 1"
+                onclick="openModal('Project2', 0)"
+              />
+              <img
+                src="img/b2.png"
+                alt="Project 2 - Image 2"
+                onclick="openModal('Project2', 1)"
+              />
+              <img
+                src="img/b3.png"
+                alt="Project 2 - Image 3"
+                onclick="openModal('Project2', 2)"
+              />
+              <img
+                src="img/b4.png"
+                alt="Project 2 - Image 4"
+                onclick="openModal('Project2', 3)"
+              />
+            </div>
+            <div class="text-content">
+              <h2>Smart Farming Platform</h2>
+              <p>I developed a smart farming platform using Python and Django for the backend, with a modern frontend. This website enables farmers to buy and sell agricultural products, seek expert advice, and access advanced farming resources. It features a comprehensive marketplace, secure transactions, and expert consultation services, all designed to enhance farm management and productivity.
+                <br />
+                <br />
+                <b>Technologies used:</b> Frontend : Html, Css, JavaScript. Backend: Python, Sql
+                <br />
+                <b>Role:</b> Frontend
+              </p>
+              <button class="project-button" onclick="redirectToLink('https://github.com/HellcatOG/Smart__Farm.git')" >Project 2 Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <img id="modal-image" src="" alt="Modal Image" />
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+      </div>
+     </section>
+<!-- Resume Section -->
+<section id="resume-section">
+  <div class="resume-tile">
+    <h2>Resume</h2>
+    <p>Explore my professional journey and accomplishments in detail by downloading my resume.</p>
+    <!-- Embedded PDF -->
+    <iframe id="resume-iframe" src="resume.pdf" frameborder="0"></iframe>
+    <!-- Buttons -->
+    <div class="button-container">
+      <a href="resume.pdf" class="btn download-link" download>Download PDF</a>
+      <button class="btn view-resume-btn" onclick="openInNewTab()">View Fullscreen</button>
+    </div>
+  </div>
+</section>
+<!-- Blog -->
+
+<section id="blog-section">
+  <div class="blog-intro">
+    <h1>Blog Posts</h1>
+    <p>Stay updated with the latest trends, tips, and insights on web development, freelancing, and more</p>
+  </div>
+  
+  <div class="blog-container">
+    
+    <article class="blog-post">
+      <h2>The Future of Web Development: Trends to Watch in 2024</h2>
+      <p>In 2024, web development is advancing quickly. Key trends include the continued growth of Next.js and SvelteKit, which offer improved performance and ease of use for React and Svelte applications. JavaScript modules (ESM) are becoming more common, promoting cleaner code, while WebAssembly (Wasm) enhances browser-based performance, making complex applications more feasible. Serverless computing is on the rise with platforms like AWS Lambda, simplifying deployment and scaling by removing the need for infrastructure management. Additionally, AI tools are increasingly being used to personalize user experiences, and there is a stronger focus on accessibility to ensure inclusive design. These trends are reshaping the industry, making it crucial for developers to stay informed and adaptable.</p>
+      <a href="https://prismic.io/blog/web-development-trends" class="learn-more-btn">Learn More</a>
+    </article>
+
+    
+    <article class="blog-post">
+      <h2>Balancing Freelancing and Full-Time Work: My Experience and Tips</h2>
+      <p>Balancing a full-time job with freelancing requires effective time management. I use digital calendars and task apps to allocate specific times for freelance work, typically in the evenings or weekends, without interfering with my primary job. Finding clients involves networking through industry events and freelancing platforms, and delivering high-quality work ensures client satisfaction and repeat business. Maintaining a healthy work-life balance is crucial; I prioritize self-care and set clear boundaries between work and personal time to prevent burnout and stay motivated.</p>
+      <a href="https://rockcontent.com/blog/how-to-balance-freelance-work/" class="learn-more-btn">Learn More</a>
+    </article>
+  </div>
+</section>
+<!-- contact -->
+<section id="contact">
+  <h2 style="text-align: center;">Contact Me</h2>
+  <p style="text-align: center;">If you have any questions or just want to get in touch, use the form below.</p>
+  <div class="container1">
+      <form id="contactForm" action="https://formspree.io/f/myzgkpkg" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+          <p id="formMessage"></p>
+      </form>
+  </div>
+</section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
